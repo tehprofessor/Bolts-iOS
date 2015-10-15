@@ -6,15 +6,14 @@
 //  Copyright (c) 2014 Parse Inc. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
-#import <UIKit/UIKit.h>
-#import <objc/runtime.h>
-#import <objc/message.h>
+@import XCTest;
+@import UIKit;
+@import ObjectiveC.runtime;
+@import ObjectiveC.message;
 
-#import "Bolts.h"
-#import "BFWebViewAppLinkResolver.h"
+#import <Bolts/Bolts.h>
 
-NSMutableArray *openedUrls = nil;
+static NSMutableArray *openedUrls;
 
 @interface AppLinkTests : XCTestCase
 
@@ -463,6 +462,7 @@ NSMutableArray *openedUrls = nil;
         case UIUserInterfaceIdiomPad:
             XCTAssertEqualObjects(@"bolts2://ipad", target.URL.absoluteString);
             break;
+        case UIUserInterfaceIdiomUnspecified:
         default:
             break;
     }
@@ -728,6 +728,7 @@ NSMutableArray *openedUrls = nil;
         case UIUserInterfaceIdiomPad:
             XCTAssertEqualObjects(@"bolts2://ipad", target.URL.absoluteString);
             break;
+        case UIUserInterfaceIdiomUnspecified:
         default:
             break;
     }
