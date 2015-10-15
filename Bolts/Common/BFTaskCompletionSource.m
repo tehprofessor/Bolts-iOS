@@ -40,7 +40,7 @@
 }
 
 - (instancetype)init {
-    if (self = [super init]) {
+    if ((self = [super init])) {
         _task = [[BFTask alloc] init];
     }
     return self;

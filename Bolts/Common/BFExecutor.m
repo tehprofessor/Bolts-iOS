@@ -97,7 +97,7 @@
 #pragma mark - Initializer
 
 - (instancetype)initWithBlock:(void(^)(void(^block)()))block {
-    if (self = [super init]) {
+    if ((self = [super init])) {
         _block = block;
     }
     return self;

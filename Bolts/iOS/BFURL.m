@@ -25,7 +25,7 @@ FOUNDATION_EXPORT NSString *const BFAppLinkRefererUrl;
 @implementation BFURL
 
 - (instancetype)initWithURL:(NSURL *)url forOpenInboundURL:(BOOL)forOpenURLEvent sourceApplication:(NSString *)sourceApplication forRenderBackToReferrerBar:(BOOL)forRenderBackToReferrerBar {
-    if (self = [super init]) {
+    if ((self = [super init])) {
         _inputURL = url;
         _targetURL = url;
 

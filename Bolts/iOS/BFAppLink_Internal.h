@@ -10,6 +10,16 @@
 
 #import <Bolts/BFAppLink.h>
 
+extern NSString *const BFAppLinkDataParameterName;
+extern NSString *const BFAppLinkTargetKeyName;
+extern NSString *const BFAppLinkUserAgentKeyName;
+extern NSString *const BFAppLinkExtrasKeyName;
+extern NSString *const BFAppLinkRefererAppLink;
+extern NSString *const BFAppLinkRefererAppName;
+extern NSString *const BFAppLinkRefererUrl;
+extern NSString *const BFAppLinkVersionKeyName;
+extern NSString *const BFAppLinkVersion;
+
 @interface BFAppLink (Internal)
 
 + (instancetype)appLinkWithSourceURL:(NSURL *)sourceURL
