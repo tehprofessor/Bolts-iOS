@@ -40,9 +40,9 @@
 		1DD8FCE21BCF9D6100DCD24D /* BFCancellationTokenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60AEC21ACF093D00747DD7 /* BFCancellationTokenSource.m */; };
 		1DD8FCE31BCF9D6100DCD24D /* BFAppLinkNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5B19900A84000BAE3F /* BFAppLinkNavigation.m */; };
 		1DD8FCE41BCF9D6100DCD24D /* BFMeasurementEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B242FAB919A567660097ECAE /* BFMeasurementEvent.m */; };
-		1DD8FCE61BCF9D6100DCD24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C3CEC17DE9DE000427E62 /* Foundation.framework */; };
-		1DD8FCEF1BCF9F2500DCD24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8FCEE1BCF9F2500DCD24D /* UIKit.framework */; };
-		1DD8FCF11BCF9F2A00DCD24D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8FCF01BCF9F2A00DCD24D /* CoreGraphics.framework */; };
+		1DD8FCF41BCFA59200DCD24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8FCEE1BCF9F2500DCD24D /* UIKit.framework */; };
+		1DD8FCF51BCFA59700DCD24D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8FCF01BCF9F2A00DCD24D /* CoreGraphics.framework */; };
+		1DD8FCF71BCFA5B400DCD24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD8FCF61BCFA5B400DCD24D /* Foundation.framework */; };
 		1E9BF8DC18EA0CAD00514B1E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BF8DB18EA0CAD00514B1E /* test.html */; };
 		1EC3016118CDAA8400D06D07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C3CEC17DE9DE000427E62 /* Foundation.framework */; };
 		1EC3016318CDAA8400D06D07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC3016218CDAA8400D06D07 /* CoreGraphics.framework */; };
@@ -194,6 +194,7 @@
 		1DD8FCEA1BCF9D6100DCD24D /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD8FCEE1BCF9F2500DCD24D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1DD8FCF01BCF9F2A00DCD24D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1DD8FCF61BCFA5B400DCD24D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1E9BF8DB18EA0CAD00514B1E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		1EC3016018CDAA8400D06D07 /* BoltsTestUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoltsTestUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC3016218CDAA8400D06D07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -290,9 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DD8FCF11BCF9F2A00DCD24D /* CoreGraphics.framework in Frameworks */,
-				1DD8FCEF1BCF9F2500DCD24D /* UIKit.framework in Frameworks */,
-				1DD8FCE61BCF9D6100DCD24D /* Foundation.framework in Frameworks */,
+				1DD8FCF71BCFA5B400DCD24D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +336,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD8FCF51BCFA59700DCD24D /* CoreGraphics.framework in Frameworks */,
+				1DD8FCF41BCFA59200DCD24D /* UIKit.framework in Frameworks */,
 				8E9C3CED17DE9DE000427E62 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +556,7 @@
 		8E9C3CEB17DE9DE000427E62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DD8FCF61BCFA5B400DCD24D /* Foundation.framework */,
 				1DD8FCF01BCF9F2A00DCD24D /* CoreGraphics.framework */,
 				1DD8FCEE1BCF9F2500DCD24D /* UIKit.framework */,
 				81D0EE7C19AFA8260000AE75 /* UIKit.framework */,
@@ -693,9 +695,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1DD8FCC11BCF9D6100DCD24D /* Bolts-iOS-Dyn */ = {
+		1DD8FCC11BCF9D6100DCD24D /* Bolts-iOS-Static */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DD8FCE71BCF9D6100DCD24D /* Build configuration list for PBXNativeTarget "Bolts-iOS-Dyn" */;
+			buildConfigurationList = 1DD8FCE71BCF9D6100DCD24D /* Build configuration list for PBXNativeTarget "Bolts-iOS-Static" */;
 			buildPhases = (
 				1DD8FCC21BCF9D6100DCD24D /* Headers */,
 				1DD8FCD51BCF9D6100DCD24D /* Sources */,
@@ -705,7 +707,7 @@
 			);
 			dependencies = (
 			);
-			name = "Bolts-iOS-Dyn";
+			name = "Bolts-iOS-Static";
 			productName = Bolts;
 			productReference = 1DD8FCEA1BCF9D6100DCD24D /* Bolts.framework */;
 			productType = "com.apple.product-type.framework";
@@ -884,7 +886,7 @@
 				8E8C8F1817F241DA00E3F1C7 /* BoltsTests-OSX */,
 				F5AFCA041BA752770076E927 /* BoltsTests-tvOS */,
 				1EC3015F18CDAA8300D06D07 /* BoltsTestUI */,
-				1DD8FCC11BCF9D6100DCD24D /* Bolts-iOS-Dyn */,
+				1DD8FCC11BCF9D6100DCD24D /* Bolts-iOS-Static */,
 			);
 		};
 /* End PBXProject section */
@@ -1112,7 +1114,6 @@
 			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/Bolts/Resources/iOS-Info.plist";
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bolts.bolts-ios-dyn";
 				PRODUCT_NAME = Bolts;
 			};
@@ -1123,7 +1124,6 @@
 			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/Bolts/Resources/iOS-Info.plist";
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bolts.bolts-ios-dyn";
 				PRODUCT_NAME = Bolts;
 			};
@@ -1242,6 +1242,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = mh_dylib;
 			};
 			name = Debug;
 		};
@@ -1249,6 +1250,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = mh_dylib;
 			};
 			name = Release;
 		};
@@ -1297,7 +1299,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DD8FCE71BCF9D6100DCD24D /* Build configuration list for PBXNativeTarget "Bolts-iOS-Dyn" */ = {
+		1DD8FCE71BCF9D6100DCD24D /* Build configuration list for PBXNativeTarget "Bolts-iOS-Static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DD8FCE81BCF9D6100DCD24D /* Debug */,
