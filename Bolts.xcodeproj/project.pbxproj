@@ -191,6 +191,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D88DFF31BD18B5600329FCD /* Bolts-iOS-Static.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bolts-iOS-Static.xcconfig"; sourceTree = "<group>"; };
 		1DD8FCEA1BCF9D6100DCD24D /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD8FCEE1BCF9F2500DCD24D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1DD8FCF01BCF9F2A00DCD24D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -453,6 +454,7 @@
 				81279F741B9A3F06006696C2 /* BoltsTests-iOS.xcconfig */,
 				81279F751B9A3F06006696C2 /* BoltsTests-OSX.xcconfig */,
 				F5AFCA161BA752D30076E927 /* BoltsTests-tvOS.xcconfig */,
+				1D88DFF31BD18B5600329FCD /* Bolts-iOS-Static.xcconfig */,
 				81279F761B9A3F06006696C2 /* Shared */,
 			);
 			path = Configurations;
@@ -1111,7 +1113,7 @@
 /* Begin XCBuildConfiguration section */
 		1DD8FCE81BCF9D6100DCD24D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
+			baseConfigurationReference = 1D88DFF31BD18B5600329FCD /* Bolts-iOS-Static.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/Bolts/Resources/iOS-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bolts.bolts-ios-dyn";
@@ -1121,7 +1123,7 @@
 		};
 		1DD8FCE91BCF9D6100DCD24D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
+			baseConfigurationReference = 1D88DFF31BD18B5600329FCD /* Bolts-iOS-Static.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/Bolts/Resources/iOS-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bolts.bolts-ios-dyn";
@@ -1242,7 +1244,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
 			buildSettings = {
-				MACH_O_TYPE = mh_dylib;
 			};
 			name = Debug;
 		};
@@ -1250,7 +1251,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81279F721B9A3F06006696C2 /* Bolts-iOS.xcconfig */;
 			buildSettings = {
-				MACH_O_TYPE = mh_dylib;
 			};
 			name = Release;
 		};

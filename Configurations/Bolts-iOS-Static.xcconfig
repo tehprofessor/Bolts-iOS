@@ -12,7 +12,7 @@
 
 PRODUCT_NAME = Bolts
 
-MACH_O_TYPE = mh_dylib
+MACH_O_TYPE = staticlib
 
 DEFINES_MODULE = YES
 MODULEMAP_FILE = $(SRCROOT)/Bolts/Resources/iOS.modulemap
