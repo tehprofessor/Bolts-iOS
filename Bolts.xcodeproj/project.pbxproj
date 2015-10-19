@@ -280,6 +280,7 @@
 		B242FABA19A567660097ECAE /* BFURL_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFURL_Internal.h; sourceTree = "<group>"; };
 		B242FAC019A599CD0097ECAE /* BFMeasurementEvent_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFMeasurementEvent_Internal.h; sourceTree = "<group>"; };
 		C46AC39A1BD1A894006C2D90 /* Bolts-watchOS-Static.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bolts-watchOS-Static.xcconfig"; sourceTree = "<group>"; };
+		C46AC39E1BD47604006C2D90 /* Bolts-tvOS-Static.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bolts-tvOS-Static.xcconfig"; sourceTree = "<group>"; };
 		F5AFCA021BA752750076E927 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AFCA131BA752770076E927 /* BoltsTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoltsTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AFCA151BA752AF0076E927 /* Bolts-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bolts-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -457,6 +458,7 @@
 				F5AFCA161BA752D30076E927 /* BoltsTests-tvOS.xcconfig */,
 				1D88DFF31BD18B5600329FCD /* Bolts-iOS-Static.xcconfig */,
 				C46AC39A1BD1A894006C2D90 /* Bolts-watchOS-Static.xcconfig */,
+				C46AC39E1BD47604006C2D90 /* Bolts-tvOS-Static.xcconfig */,
 				81279F761B9A3F06006696C2 /* Shared */,
 			);
 			path = Configurations;
